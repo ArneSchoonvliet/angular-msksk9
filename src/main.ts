@@ -2,9 +2,9 @@ import 'zone.js/dist/zone';
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { bootstrapApplication } from '@angular/platform-browser';
-import { Route, RouterModule } from '@angular/router';
+import { Routes, RouterModule } from '@angular/router';
 
-const ROUTES: Route[] = [
+const ROUTES: Routes = [
   {
     path: 'admin',
     loadComponent: () => import('./admin').then((mod) => mod.Admin),
